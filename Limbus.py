@@ -2,8 +2,11 @@ import random
 import streamlit as st
 
 # 페이지 설정
-st.set_page_config(page_title="림버스 수감자 조합기 V2", page_icon="🎲", layout="centered")
-
+st.set_page_config(
+    page_title="림버스 수감자 조합기 V2",
+    page_icon="logo.png",
+    layout="centered"
+)
 # 1. 초기 데이터 기입 (세션 상태에 저장하여 추가/삭제 데이터가 유지되도록 함)
 if "identity_pool" not in st.session_state:
     st.session_state.identity_pool = {
